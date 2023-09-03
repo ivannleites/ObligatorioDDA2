@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "XJU7MeH6M9CnJmPMi2ZpgVKFYa0boiEvQdPwmt1inw3PbPq5NhLOQtU5sf1OsYZDsqDnSI0SGG73qERg9siY1w==",
+  "dgSpecHash": "Ai5gNtGv626s0fwMjGYPwU7z9HUJBrsjATrtH3kyea6SffspBKefi2OSq0SPrzUgEnFH+nsELRXYv07B4hXW/w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Ivánn\\source\\repos\\ObligatorioDDA2\\Dominio\\Dominio.csproj",
+  "projectFilePath": "C:\\Users\\Ivánn\\Source\\Repos\\ObligatorioDDA2\\Dominio\\obligatorio.Domain.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

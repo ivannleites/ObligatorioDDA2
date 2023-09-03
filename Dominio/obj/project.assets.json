@@ -13,9 +13,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Ivánn\\source\\repos\\ObligatorioDDA2\\Dominio\\Dominio.csproj",
-      "projectName": "Dominio",
-      "projectPath": "C:\\Users\\Ivánn\\source\\repos\\ObligatorioDDA2\\Dominio\\Dominio.csproj",
+      "projectUniqueName": "C:\\Users\\Ivánn\\source\\repos\\ObligatorioDDA2\\Dominio\\obligatorio.Domain.csproj",
+      "projectName": "obligatorio.Domain",
+      "projectPath": "C:\\Users\\Ivánn\\source\\repos\\ObligatorioDDA2\\Dominio\\obligatorio.Domain.csproj",
       "packagesPath": "C:\\Users\\Ivánn\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Ivánn\\source\\repos\\ObligatorioDDA2\\Dominio\\obj\\",
       "projectStyle": "PackageReference",

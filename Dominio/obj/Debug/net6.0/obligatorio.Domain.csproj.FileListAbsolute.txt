@@ -1,0 +1,11 @@
+C:\Users\Ivánn\Source\Repos\ObligatorioDDA2\Dominio\bin\Debug\net6.0\obligatorio.Domain.deps.json
+C:\Users\Ivánn\Source\Repos\ObligatorioDDA2\Dominio\bin\Debug\net6.0\obligatorio.Domain.dll
+C:\Users\Ivánn\Source\Repos\ObligatorioDDA2\Dominio\bin\Debug\net6.0\obligatorio.Domain.pdb
+C:\Users\Ivánn\Source\Repos\ObligatorioDDA2\Dominio\obj\Debug\net6.0\obligatorio.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Ivánn\Source\Repos\ObligatorioDDA2\Dominio\obj\Debug\net6.0\obligatorio.Domain.AssemblyInfoInputs.cache
+C:\Users\Ivánn\Source\Repos\ObligatorioDDA2\Dominio\obj\Debug\net6.0\obligatorio.Domain.AssemblyInfo.cs
+C:\Users\Ivánn\Source\Repos\ObligatorioDDA2\Dominio\obj\Debug\net6.0\obligatorio.Domain.csproj.CoreCompileInputs.cache
+C:\Users\Ivánn\Source\Repos\ObligatorioDDA2\Dominio\obj\Debug\net6.0\obligatorio.Domain.dll
+C:\Users\Ivánn\Source\Repos\ObligatorioDDA2\Dominio\obj\Debug\net6.0\refint\obligatorio.Domain.dll
+C:\Users\Ivánn\Source\Repos\ObligatorioDDA2\Dominio\obj\Debug\net6.0\obligatorio.Domain.pdb
+C:\Users\Ivánn\Source\Repos\ObligatorioDDA2\Dominio\obj\Debug\net6.0\ref\obligatorio.Domain.dll

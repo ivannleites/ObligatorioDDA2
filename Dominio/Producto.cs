@@ -1,4 +1,5 @@
-﻿using System;
+﻿using obligatorio.Domain;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
@@ -34,9 +35,7 @@ namespace Domain
         public int IDCategoria { get; set; }
         public Categoria Categoria { get; set; }
 
-        [Required]
-        [ForeignKey("Color")]
-        public int IDColor { get; set; }
-        public Color Color { get; set; }
+        [InverseProperty("Producto")]
+        public ICollection<ProductoColor> ProductoColores { get; set; }
     }
 }

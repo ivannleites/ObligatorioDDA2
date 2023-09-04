@@ -163,9 +163,6 @@ namespace ObligatorioAPI.Migrations
                     b.Property<int>("IDCategoria")
                         .HasColumnType("int");
 
-                    b.Property<int>("IDColor")
-                        .HasColumnType("int");
-
                     b.Property<int>("IDMarca")
                         .HasColumnType("int");
 
@@ -180,8 +177,6 @@ namespace ObligatorioAPI.Migrations
                     b.HasKey("ID");
 
                     b.HasIndex("IDCategoria");
-
-                    b.HasIndex("IDColor");
 
                     b.HasIndex("IDMarca");
 
@@ -250,6 +245,23 @@ namespace ObligatorioAPI.Migrations
                     b.ToTable("Usuarios");
                 });
 
+            modelBuilder.Entity("obligatorio.Domain.ProductoColor", b =>
+                {
+                    b.Property<int>("ProductoID")
+                        .HasColumnType("int")
+                        .HasColumnOrder(1);
+
+                    b.Property<int>("ColorID")
+                        .HasColumnType("int")
+                        .HasColumnOrder(2);
+
+                    b.HasKey("ProductoID", "ColorID");
+
+                    b.HasIndex("ColorID");
+
+                    b.ToTable("ProductoColores");
+                });
+
             modelBuilder.Entity("Domain.Carrito", b =>
                 {
                     b.HasOne("Domain.Producto", "Producto")
@@ -315,12 +327,6 @@ namespace ObligatorioAPI.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("Domain.Color", "Color")
-                        .WithMany()
-                        .HasForeignKey("IDColor")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
                     b.HasOne("Domain.Marca", "Marca")
                         .WithMany()
                         .HasForeignKey("IDMarca")
@@ -329,9 +335,36 @@ namespace ObligatorioAPI.Migrations
 
                     b.Navigation("Categoria");
 
+                    b.Navigation("Marca");
+                });
+
+            modelBuilder.Entity("obligatorio.Domain.ProductoColor", b =>
+                {
+                    b.HasOne("Domain.Color", "Color")
+                        .WithMany("ProductoColores")
+                        .HasForeignKey("ColorID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("Domain.Producto", "Producto")
+                        .WithMany("ProductoColores")
+                        .HasForeignKey("ProductoID")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
                     b.Navigation("Color");
 
-                    b.Navigation("Marca");
+                    b.Navigation("Producto");
+                });
+
+            modelBuilder.Entity("Domain.Color", b =>
+                {
+                    b.Navigation("ProductoColores");
+                });
+
+            modelBuilder.Entity("Domain.Producto", b =>
+                {
+                    b.Navigation("ProductoColores");
                 });
 #pragma warning restore 612, 618
         }
